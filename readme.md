@@ -1,41 +1,37 @@
-Wordle Toolset
-Zestaw narzędzi w Pythonie do gry w Wordle: od gry terminalowej, po inteligentny algorytm podpowiadający najlepsze słowa.
+# Wordle PL
 
-Funkcje
-Game Emulator: Klasyczna gra Wordle w terminalu z kolorowymi oznaczeniami (Zielony/Żółty/Czerwony).
+Konsolowa gra Wordle w języku polskim wraz z asystentem do rozwiązywania zagadek.
 
-Smart Solver: Filtrowanie bazy słów na podstawie trafień i sugestie oparte na częstotliwości występowania liter.
+---
 
-Dictionary Utility: Skrypt do automatycznego przygotowania bazy pięcioliterowych słów.
+## Pliki
 
-Struktura plików
-main.py – Interaktywna gra Wordle.
+| Plik | Opis |
+|---|---|
+| `createwords.py` | Filtruje słownik do słów 5-literowych → `slowa_correct.txt` |
+| `main.py` | Główna gra Wordle w terminalu |
+| `wordleengine.py` | Asystent pomagający odgadnąć słowo |
 
-wordleengine.py – Zaawansowany solver z filtrowaniem i punktacją słów.
+---
 
-createwords.py – Narzędzie do czyszczenia pliku slowa.txt i generowania slowa_correct.txt.
+## Wymagania
 
-Instrukcja obsługi
-1. Przygotowanie słownika
-Upewnij się, że masz plik slowa.txt w folderze głównym, a następnie uruchom:
+- Python 3.x
+- Plik `slowa.txt` — słownik języka polskiego ze strony [https://sjp.pl/sl/growy/](https://sjp.pl/sl/growy/)
 
-Bash
+---
+
+## Uruchomienie
+
+```bash
+# 1. Przygotuj słownik
 python createwords.py
-2. Gra w Wordle
-Uruchom grę i spróbuj zgadnąć wylosowane słowo w 5 próbach:
 
-Bash
+# 2. Zagraj
 python main.py
-3. Korzystanie z Solvera
-Jeśli utkniesz w grze, użyj solvera, aby otrzymać sugestie:
 
-Bash
+# 3. Lub użyj silnika
 python wordleengine.py
-Filter: Wprowadź litery szare, żółte i zielone (użyj spacji dla nieznanych pól, np. a  e ).
+```
 
-Refine: Precyzyjnie wyklucz żółte litery z konkretnych pozycji.
-
-Logika Solvera
-Program ocenia słowa na podstawie częstotliwości występowania liter w pozostałej puli możliwości. Im więcej popularnych liter zawiera słowo, tym wyższy jest jego priorytet w sekcji "Suggestions".
-
-Projekt stworzony w celach edukacyjnych.
+---

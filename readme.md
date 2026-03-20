@@ -1,6 +1,6 @@
 # Wordle PL
 
-Konsolowa gra Wordle w języku polskim wraz z asystentem do rozwiązywania zagadek.
+Wordle w terminalu w języku polskim wraz z silnikiem do rozwiązywania zagadek.
 
 ---
 
@@ -8,9 +8,9 @@ Konsolowa gra Wordle w języku polskim wraz z asystentem do rozwiązywania zagad
 
 | Plik | Opis |
 |---|---|
-| `createwords.py` | Filtruje słownik do słów 5-literowych → `slowa_correct.txt` |
+| `createwords.py` | Filtruje słownik do słów 5-literowych |
 | `main.py` | Główna gra Wordle w terminalu |
-| `wordleengine.py` | Asystent pomagający odgadnąć słowo |
+| `wordleengine.py` | Silnik odgadujący wyraz |
 
 ---
 

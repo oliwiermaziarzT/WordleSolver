@@ -24,13 +24,10 @@ Wordle w terminalu w języku polskim wraz z silnikiem do rozwiązywania zagadek.
 ## Uruchomienie
 
 ```bash
-# 1. Przygotuj słownik
 python createwords.py
 
-# 2. Zagraj
 python main.py
 
-# 3. Lub użyj silnika
 python wordleengine.py
 ```
 
